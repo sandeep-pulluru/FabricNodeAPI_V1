@@ -56,7 +56,7 @@ var channelConfig = function(channelName, username, orgName, fnName) {
 
                 if (fnName == 'AddOrg') {
                     //get Org3 JSON and add it to the original config JSON
-                    var org3_json = JSON.parse(fs.readFileSync(path.join(__dirname, '../artifacts/channel/org3.json')));
+                    var org3_json = JSON.parse(fs.readFileSync(path.join(__dirname, '../artifacts/channel-update-json/org3.json')));
                     updated_config_json = JSON.parse(original_config_json);
                     updated_config_json.channel_group.groups.Application.groups["Org3MSP"] = org3_json.Org3MSP;
 

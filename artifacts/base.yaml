@@ -72,4 +72,4 @@ services:
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_TLS_ENABLED=true
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d --config fabric-ca-server-config2.yaml'
+    command: sh -c 'fabric-ca-server start -b admin:adminpw -d'
